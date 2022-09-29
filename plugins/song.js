@@ -145,7 +145,7 @@ Module({
     fromMe: sourav,
     desc: "Select and download songs from yt (list)"
 }, (async (message, match) => {
-    if (!match[1]) return message.sendReply("*Need words*")
+    if (!match[1]) return message.sendReply("*♒♒*")
     var myid = message.client.user.id.split("@")[0].split(":")[0]
     let sr = await yts(match[1]);
     sr = sr.all;
